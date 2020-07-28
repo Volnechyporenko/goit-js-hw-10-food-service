@@ -6,14 +6,14 @@ const Theme = {
 const themeChageBtn = document.querySelector('.js-switch-input');
 const bodyRef = document.querySelector('#body');
 const applayedTheme = localStorage.getItem('theme');
-console.log(themeChageBtn);
+
 if (applayedTheme === Theme.DARK) {
   bodyRef.classList.add(applayedTheme);
   themeChageBtn.setAttribute('checked', true);
 } else {
   bodyRef.classList.add(Theme.LIGHT);
 }
-console.log(themeChageBtn);
+
 themeChageBtn.addEventListener('change', changeTheme);
 
 function changeTheme(event) {
